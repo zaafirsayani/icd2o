@@ -1,0 +1,6 @@
+print("Question: What's the colour of an orange?")
+print("A) Red")
+print("B) Blue")
+print("C) Orange")
+print("D) Green")
+print("Correct Answer: C) Orange")
