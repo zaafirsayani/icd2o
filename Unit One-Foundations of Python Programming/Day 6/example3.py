@@ -1,23 +1,14 @@
-# Define data
-item1 = "Apples"
-quantity1 = 12
-price1 = 0.75
+import math
+average = 67.4465456
 
-item2 = "Bananas"
-quantity2 = 20
-price2 = 0.60
+print(f"{average}")
+print(f"{average:.2f}")
+print(f"{average:>20}")
+print(f"{average:20.2f}")
+#print(f"{average:.2f>20}") #does not work 
 
-item3 = "Cherries"
-quantity3 = 8
-price3 = 2.50
+#Print pi with 2 decimal places aligned right with a width of 10
+ 
+print(math.pi)
 
-item4 = "Dates"
-quantity4 = 15
-price4 = 1.20
-
-# Print table
-print(f"{'Item':<10} {'Quantity':>10} {'Price ($)':>10}")
-print(f"{item1:<10} {quantity1:>10} {price1:>10.2f}")
-print(f"{item2:<10} {quantity2:>10} {price2:>10.2f}")
-print(f"{item3:<10} {quantity3:>10} {price3:>10.2f}")
-print(f"{item4:<10} {quantity4:>10} {price4:>10.2f}")
+print (f"{math.pi:>20.2f}")
