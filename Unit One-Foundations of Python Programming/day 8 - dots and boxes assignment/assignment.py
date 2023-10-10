@@ -31,6 +31,8 @@ game5opponentname = input("Opponents name: ")
 game5points = int(input("Your points: "))
 game5_opponentpoints = int(input("Opponents points: "))
 
+print()
+
 player_name= input("Enter your name: ")
 
 box1 = game1points/36
