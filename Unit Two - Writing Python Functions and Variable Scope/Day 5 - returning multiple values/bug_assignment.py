@@ -24,4 +24,4 @@ def display_table(bug1, count1, bug2, count2, bug3, count3):
 bug1,count1 = input_bug_type_and_count()
 bug2,count2 = input_bug_type_and_count()
 bug3,count3 = input_bug_type_and_count()
-print(display_table(bug1, count1, bug2, count2, bug3, count3))
+display_table(bug1, count1, bug2, count2, bug3, count3)
