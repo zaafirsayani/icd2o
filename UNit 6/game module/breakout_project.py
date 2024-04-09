@@ -79,11 +79,24 @@ while running:
 
     for brick in bricks[:]:
         if ball.colliderect(brick['rect']):
+            if brick['colour'] == RED:
+                ball_speed_x *= 0.8
+                ball_speed_y *= 0.8
+            if brick['colour'] == BLUE:
+                score+=2
+            if brick['colour'] == GREEN:
+                score-=1
+            if brick['colour'] == LIGHTBLUE:
+                paddle.left -=2
+                paddle.right -=2
+            
             bricks.remove(brick)
             ball_speed_y *= -1
             score += 1
             break_sound.play()
             break_sound.set_volume(0.5)
+        
+            
     
     timer+=0.02
     if ball.bottom >= SCREEN_HEIGHT or not bricks:
@@ -99,8 +112,8 @@ while running:
     score_text = font.render("Score: " + str(score), True, WHITE)
     screen.blit(score_text, (10, 10))
 
-    timer_text = font.render("Time: " + str(timer), True, WHITE)
-    screen.blit(timer_text, (590, 10))
+    timer_text = font.render("Time: " + str(int(timer)), True, WHITE)
+    screen.blit(timer_text, (610, 10))
 
     pygame.display.flip()
 
